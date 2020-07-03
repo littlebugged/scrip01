@@ -1,3 +1,11 @@
+######
+
+按KB号安装补丁
+
+
+#######
+
+
 $sysInfo = Get-WmiObject -Class win32_OperatingSystem
 If ($sysInfo.Version -contains '6.1.7601' -and $sysInfo.ProductType -contains '1'){
 $ws = New-Object -ComObject WScript.Shell
